@@ -4,7 +4,7 @@ from .models import CustomUser, Report
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ['id', 'username', 'email', 'role']
+        fields = ['id', 'username', 'email', 'role','password']
 
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
